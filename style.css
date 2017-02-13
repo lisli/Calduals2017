@@ -604,6 +604,9 @@ img {
   .page-link span {
     margin-right: 6px; }
 
+.home #primary img {
+  width: 100%; }
+
 /* =BLOG SPECIFIC
 ------------------ */
 /* =Pager Navigation

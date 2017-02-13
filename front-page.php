@@ -7,7 +7,17 @@
 
 get_header(); ?>
 
-<section id="primary" role="main" class="col pull-left span_8">
+<section id="primary" role="main" class="col pull-left span_12">
+
+	<?php 
+
+		$image = get_field('hero_background_image');
+
+		if( !empty($image) ): ?>
+
+		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+	<?php endif; ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 
@@ -24,6 +34,27 @@ get_header(); ?>
 
 <?php endwhile; // end of the loop. ?>
 
+
+<div class="homepage-feed recent-posts">
+		<h2 class="home-header">Latest News</h2>
+		<ul>
+		<!-- Define our WP Query Parameters -->
+		<?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
+
+		<!-- Start our WP Query -->
+		<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+			<li>
+				<!-- Display the Post Title with Hyperlink & Publish Date -->
+				<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+				<h3><?php the_date(); ?></h3>
+			</li>
+		<!-- Repeat the process and reset once it hits the limit -->
+		<?php 
+		endwhile;
+		wp_reset_postdata();
+		?>
+		</ul>
+	</div>
 </section><!-- #primary -->
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
