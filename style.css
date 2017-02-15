@@ -606,6 +606,21 @@ img {
 
 .home #primary img {
   width: 100%; }
+.home .hero {
+  position: relative; }
+  .home .hero ul {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .home .hero li {
+    background-color: #7aa0cd;
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center; }
+  .home .hero a {
+    color: #fff; }
 
 /* =BLOG SPECIFIC
 ------------------ */
