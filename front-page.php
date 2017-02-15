@@ -1,6 +1,6 @@
 <?php
 /**
- * Home Page
+ * Template Name: Home Page
  *
  * @package themeHandle
  */
@@ -10,13 +10,31 @@ get_header(); ?>
 <section id="primary" role="main" class="col pull-left span_12">
 
 	<?php 
-
 		$image = get_field('hero_background_image');
-
 		if( !empty($image) ): ?>
 
 		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
+	<?php endif; ?>
+
+	<?php if( have_rows('menu_item') ): ?>
+	<ul>
+		<?php while( have_rows('menu_item') ): the_row(); 
+		// vars
+		$menu_text = get_sub_field('menu_item_text');
+		$menu_link = get_sub_field('menu_item_link');
+
+		?>
+		
+			<li>
+			<?php if( $menu_link ): ?><a href="<?php echo $menu_link; ?>"><?php endif; ?>
+			<?php if( $menu_text ): ?><p><?php echo $menu_text; ?></p><?php endif; ?>
+			<?php if( $menu_link ): ?></a><?php endif; ?>
+			</li>
+		
+
+		<?php endwhile; ?>
+	</ul>
 	<?php endif; ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
