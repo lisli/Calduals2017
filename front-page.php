@@ -54,7 +54,7 @@ get_header(); ?>
 <?php endwhile; // end of the loop. ?>
 
 
-<div class="homepage-feed recent-posts">
+	<div class="homepage-feed recent-posts">
 		<h2 class="home-header">Latest News</h2>
 		<ul>
 		<!-- Define our WP Query Parameters -->
