@@ -212,7 +212,7 @@ textarea {
 /* =LAYOUTS
 ------------------ */
 body {
-  background: #FFF;
+  background: #fff;
   margin: 0;
   padding: 0; }
 
@@ -317,7 +317,6 @@ body {
   height: 50px; }
 
 #site-header {
-  margin-bottom: 45px;
   position: relative;
   z-index: 250; }
   #site-header img {
@@ -347,6 +346,16 @@ body {
         cursor: pointer; }
         .access ul li a:hover, .access ul li a:focus {
           color: red; }
+
+.menu-tabbed-menu-container {
+  text-align: right; }
+  .menu-tabbed-menu-container ul li a {
+    color: #7aa0cd;
+    padding: 20px; }
+  .menu-tabbed-menu-container .current-menu-item {
+    background: #1a1364; }
+    .menu-tabbed-menu-container .current-menu-item a {
+      color: #fff; }
 
 /* =CONTENT
 ------------------ */
@@ -604,22 +613,23 @@ img {
   .page-link span {
     margin-right: 6px; }
 
-.home #primary img {
+.page-template-front-page #primary img {
   width: 100%; }
-.home .hero {
+.page-template-front-page .hero {
+  border-top: 10px solid #1a1364;
   position: relative; }
-  .home .hero ul {
+  .page-template-front-page .hero ul {
     margin: 0;
     position: absolute;
     right: 0;
     top: 0; }
-  .home .hero li {
+  .page-template-front-page .hero li {
     background-color: #7aa0cd;
     list-style: none;
     margin-bottom: 10px;
     padding: 10px;
     text-align: center; }
-  .home .hero a {
+  .page-template-front-page .hero a {
     color: #fff; }
 
 /* =BLOG SPECIFIC

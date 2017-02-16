@@ -1,4 +1,4 @@
-.home {
+.page-template-front-page {
 	#primary {
 		img {
 			width: 100%;
@@ -6,6 +6,7 @@
 	}
 
 	.hero {
+		border-top: 10px solid #1a1364;
 		position: relative;
 
 		ul {
@@ -16,7 +17,7 @@
 		}
 
 		li {
-			background-color: #7aa0cd;
+			background-color: $light;
 			list-style: none;
 			margin-bottom: 10px;
 			padding: 10px;

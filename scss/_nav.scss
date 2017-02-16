@@ -35,8 +35,29 @@
 			// 	content: none;
 			// }
 		}
-		
-		
 	}
-	
 }
+
+
+//styles specific to the tabbed menu
+.menu-tabbed-menu-container {
+	text-align: right;
+
+	li {
+		// padding: 20px;
+	}
+
+	ul li a {
+		color: $light;
+		padding: 20px;
+	}
+
+	.current-menu-item {
+		background: $dark;
+
+		a {
+			color: $bg;
+		}
+	}
+}
+

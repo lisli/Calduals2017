@@ -29,6 +29,9 @@ function themeFunction_setup() {
 
 	// Add custom nav menu support
 	register_nav_menu( 'primary', __( 'Primary Menu', 'themeTextDomain' ) );
+
+	// Add custom tabbed menu
+	//register_tabbed_menu( 'tabbed', __( 'Tabbed Menu', 'themeTextDomain' ) );
 	
 	// Add featured image support
 	add_theme_support( 'post-thumbnails' );
