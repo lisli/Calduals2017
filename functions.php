@@ -54,9 +54,41 @@ add_action( 'after_setup_theme', 'themeFunction_setup' );
 /* SIDEBARS & WIDGET AREAS
  ========================== */
 function themeFunction_widgets_init() {
+
+	//regular sidebar
 	register_sidebar( array(
-		'name' => __( 'Sidebar', 'themeTextDomain' ),
+		'name' => __( 'Sidebar', 'calduals2017' ),
 		'id' => 'sidebar-1',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	//top footer
+	register_sidebar( array(
+		'name' => __( 'Top Footer', 'calduals2017' ),
+		'id' => 'top-footer',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	//bottom footer left
+	register_sidebar( array(
+		'name' => __( 'Bottom Footer Left', 'calduals2017' ),
+		'id' => 'bottom-footer-left',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	//bottom footer right
+	register_sidebar( array(
+		'name' => __( 'Bottom Footer Right', 'calduals2017' ),
+		'id' => 'bottom-footer-right',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',

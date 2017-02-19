@@ -347,7 +347,7 @@ body {
     .menu-tabbed-menu-container .current-menu-item a {
       color: #fff; }
 
-footer {
+footer .bottom-footer {
   background-color: #333336;
   color: #fff; }
 
