@@ -298,32 +298,22 @@ body {
     margin-left: 0; } }
 
 /* Sticky footer */
-html, body {
-  height: 100%; }
-
-body {
-  margin: 0px;
-  padding: 0px; }
-
-#page {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin-bottom: -50px; }
-  #page #main {
-    padding: 0 0 50px 0; }
-
-#footer {
-  height: 50px; }
-
 #site-header {
   position: relative;
   z-index: 250; }
+  #site-header .logo {
+    display: inline-block; }
   #site-header img {
     height: auto; }
 
 .access {
   margin: 0; }
+  .access:after {
+    content: '';
+    display: table;
+    width: 100%;
+    height: 0.1px;
+    clear: both; }
   .access div {
     float: left;
     overflow: hidden;
@@ -356,6 +346,10 @@ body {
     background: #1a1364; }
     .menu-tabbed-menu-container .current-menu-item a {
       color: #fff; }
+
+footer {
+  background-color: #333336;
+  color: #fff; }
 
 /* =CONTENT
 ------------------ */

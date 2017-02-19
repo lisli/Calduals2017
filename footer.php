@@ -11,11 +11,14 @@
 	</div><!-- #main -->
 
 </div><!-- #page -->
-<footer id="footer" role="contentinfo" class="row">
-	<div id="copyright" class="container">
-		&copy; <?php echo date( 'Y' ); echo '&nbsp;'; echo bloginfo( 'name' ); ?><br>
-		Site by <a href="designerURI" target="_blank" rel="nofollow">themeDesigner</a> &amp;
-		<a href="authorURI" target="_blank" rel="nofollow">themeAuthor</a>
+<footer id="footer" role="contentinfo">
+	<div class="top-footer container row">
+	</div>
+	<div class="bottom-footer container row">
+		<div class="left-widget">
+		</div>
+		<div class="right-widget">
+		</div>
 	</div>
 </footer><!-- #colophon -->
 
