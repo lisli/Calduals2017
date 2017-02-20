@@ -1,27 +1,83 @@
 footer {
 	.top-footer {
 		background-color: $light;
+		border-top: 10px solid $dark;
 		color: $bg;
+		padding-bottom: 30px;
 
-		.widget-title {
-			color: $bg;
+		@media (min-width: $s){
+			padding-bottom: 0;
 		}
+
+		.widget {
+			padding: 0;
+
+			@media (min-width: $s){
+				clear: none;
+				float: left;
+				padding-left: 5%;
+				width: 25%;
+			}
+
+			p {
+				margin-bottom: 0;
+			}
+
+			&:first-of-type {
+				@include clearfix;
+				margin-bottom: 30px;
+
+				@media (min-width: $s){
+					margin-bottom: 0;
+					padding-left: 0;
+				}
+			}
+		}
+		.widget-title {
+			background-color: $dark;
+			color: $bg;
+			display: inline;
+			padding: 12px;
+			@media (min-width: $s) {
+				// display: inline-block;
+	    		float: left;
+	    		// width: 20%;
+	    	}
+		}
+
+		// div {
+		// 	@media (min-width: $s){
+		// 		float: left;
+		// 	}
+		// }
+
+		// .textwidget {
+		// 	margin-top: 30px;
+
+		// 	@media (min-width: $s) {
+		// 		margin-top: 0;
+		// 	}
+		// }
 	}
 
 	.bottom-footer {
 		background-color: $grey;
 		color: $bg;
+		padding-top: 30px;
 	}
 
 	.left-widget {
 		@media (min-width: $s) {
 			float: left;
+			margin-right: 6%;
+			width: 47%
 		}
 	}
 
 	.right-widget {
 		@media (min-width: $s) {
 			float: right;
+			width: 47%
 		}
 	}
 }

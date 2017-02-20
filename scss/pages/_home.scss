@@ -87,6 +87,8 @@
 	}
 
 	.about {
+		margin-bottom: 30px;
+
 		@media (min-width: $s) {
 			float: right;
 			width: 47%
@@ -95,6 +97,10 @@
 		div {
 			border-top: 8px solid $dark;
 			padding-top: 15px;
+		}
+
+		a {
+			color: $light;
 		}
 	}
 }
