@@ -439,9 +439,20 @@ body {
     .menu-tabbed-menu-container .current-menu-item a {
       color: #fff; }
 
+footer .top-footer {
+  background-color: #7aa0cd;
+  color: #fff; }
+  footer .top-footer .widget-title {
+    color: #fff; }
 footer .bottom-footer {
   background-color: #333336;
   color: #fff; }
+@media (min-width: 740px) {
+  footer .left-widget {
+    float: left; } }
+@media (min-width: 740px) {
+  footer .right-widget {
+    float: right; } }
 
 /* =CONTENT
 ------------------ */
@@ -717,6 +728,9 @@ img {
     text-align: center; }
   .page-template-front-page .hero a {
     color: #fff; }
+@media (min-width: 740px) {
+  .page-template-front-page .homepage-feed {
+    float: left; } }
 
 /* =BLOG SPECIFIC
 ------------------ */

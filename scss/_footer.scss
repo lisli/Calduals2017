@@ -1,6 +1,27 @@
 footer {
+	.top-footer {
+		background-color: $light;
+		color: $bg;
+
+		.widget-title {
+			color: $bg;
+		}
+	}
+
 	.bottom-footer {
 		background-color: $grey;
 		color: $bg;
+	}
+
+	.left-widget {
+		@media (min-width: $s) {
+			float: left;
+		}
+	}
+
+	.right-widget {
+		@media (min-width: $s) {
+			float: right;
+		}
 	}
 }

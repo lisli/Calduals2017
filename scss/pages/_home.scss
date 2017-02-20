@@ -28,4 +28,10 @@
 			color: #fff;
 		}
 	}
+
+	.homepage-feed {
+		@media (min-width: $s) {
+			float: left;
+		}
+	}
 }
