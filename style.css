@@ -391,8 +391,7 @@ body {
     width: 100%; } }
 /* Sticky footer */
 #site-header {
-  position: relative;
-  margin-top: 50px; }
+  position: relative; }
   #site-header .logo {
     position: absolute;
     z-index: 250; }
@@ -429,6 +428,37 @@ body {
         cursor: pointer; }
         .access ul li a:hover, .access ul li a:focus {
           color: red; }
+
+nav.language {
+  background: #333336;
+  margin-bottom: 30px;
+  padding: 6px 0; }
+  nav.language .menu-language-menu-container {
+    display: inline; }
+  nav.language span {
+    color: #7aa0cd;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 5px;
+    text-transform: uppercase; }
+  nav.language ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0; }
+  nav.language li {
+    color: #7aa0cd;
+    display: inline-block; }
+    nav.language li:after {
+      content: '|';
+      font-size: 16px;
+      font-weight: 100;
+      position: relative;
+      left: 1px; }
+    nav.language li:last-of-type:after {
+      content: ''; }
+  nav.language a {
+    color: #fff;
+    padding: 0 5px; }
 
 .menu-tabbed-menu-container {
   text-align: right; }

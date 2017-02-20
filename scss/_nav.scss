@@ -39,6 +39,56 @@
 	}
 }
 
+//styles specific to the language menu
+
+nav.language {
+	background: $grey;
+	margin-bottom: 30px;
+	padding: 6px 0;
+
+	.menu-language-menu-container {
+		display: inline;
+	}
+
+	span {
+		color: $light;
+		font-weight: bold;
+		letter-spacing: 1px;
+		margin-right: 5px;
+		text-transform: uppercase;
+	}
+
+	ul {
+		display: inline;
+		list-style-type: none;
+		margin: 0;
+	}
+
+	li {
+		color: $light;
+		display: inline-block;
+		&:after {
+			content: '|';
+			font-size: 16px;
+			font-weight: 100;
+			position: relative;
+			// top: 2px;
+			left: 1px;
+		}
+
+		&:last-of-type {
+			&:after {
+				content: '';
+			}
+		}
+	}
+
+	a {
+		color: $bg;
+		padding: 0 5px;
+	}
+}
+
 
 //styles specific to the tabbed menu
 .menu-tabbed-menu-container {
@@ -61,4 +111,6 @@
 		}
 	}
 }
+
+
 

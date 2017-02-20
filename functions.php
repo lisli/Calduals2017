@@ -32,6 +32,9 @@ function themeFunction_setup() {
 
 	// Add custom tabbed menu
 	//register_tabbed_menu( 'tabbed', __( 'Tabbed Menu', 'themeTextDomain' ) );
+
+	// Add custom language menu
+	register_nav_menu( 'language', __( 'Language Menu', 'themeTextDomain' ) );
 	
 	// Add featured image support
 	add_theme_support( 'post-thumbnails' );

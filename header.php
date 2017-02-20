@@ -39,8 +39,14 @@
 </head>
  
 <body <?php body_class(); ?>>
+    <nav class="language row">
+        <div class="container">
+            <span>Languages:</span><?wp_nav_menu( array( 'theme_location' => 'language') ); ?>  
+        </div>
+    </nav>    
 	<div id="page">
-		<header id="site-header" role="banner" class="row">            
+		<header id="site-header" role="banner" class="row">   
+
 			<a href="<?php echo esc_url( home_url() ); ?>/" class="logo">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/assets/images/logo.png'" alt="<?php bloginfo('name'); ?>">
 			</a>
