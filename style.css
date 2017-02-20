@@ -427,7 +427,7 @@ body {
         text-decoration: none;
         cursor: pointer; }
         .access ul li a:hover, .access ul li a:focus {
-          color: red; }
+          color: #7aa0cd; }
 
 nav.language {
   background: #333336;
@@ -459,6 +459,8 @@ nav.language {
   nav.language a {
     color: #fff;
     padding: 0 5px; }
+    nav.language a:hover {
+      color: #7aa0cd; }
 
 .menu-tabbed-menu-container {
   text-align: right; }
@@ -625,7 +627,7 @@ a {
   color: #1a1364;
   text-decoration: none; }
   a:focus, a:active, a:hover {
-    color: red; }
+    color: #7aa0cd; }
 
 /* Assistive text */
 .assistive-text {
