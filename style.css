@@ -527,7 +527,7 @@ code, kbd {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
 
 abbr, acronym, dfn {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #d8d8d8;
   cursor: help; }
 
 address {
@@ -578,7 +578,7 @@ a {
 /* See _mixins.scss for more on this method for handling HTML5 elements */
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
 textarea {
-  border: 1px solid #000;
+  border: 1px solid #d8d8d8;
   padding: 4px 10px;
   -webkit-appearance: none; }
 
@@ -617,7 +617,7 @@ input[type=submit] {
 /* =PROJECT PAGES SPECIFIC
 ------------------ */
 .hentry {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #d8d8d8;
   margin: 0 0 45px;
   padding: 0 0 40px;
   position: relative;
@@ -631,21 +631,21 @@ input[type=submit] {
   padding: 20px 0 0; }
 
 .entry-content table {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #d8d8d8;
   margin: 0 0 1.5em;
   width: 100%; }
   .entry-content table td {
-    border-top: 1px solid #000;
+    border-top: 1px solid #d8d8d8;
     padding: 6px 10px 6px 0; }
 .entry-content #s {
   width: 75%; }
 
 .comment-content table {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #d8d8d8;
   margin: 0 0 1.5em;
   width: 100%; }
   .comment-content table td {
-    border-top: 1px solid #000;
+    border-top: 1px solid #d8d8d8;
     padding: 6px 10px 6px 0; }
 .comment-content #s {
   width: 75%; }
@@ -728,9 +728,52 @@ img {
     text-align: center; }
   .page-template-front-page .hero a {
     color: #fff; }
+.page-template-front-page .homepage-lower {
+  margin-top: 30px; }
+  .page-template-front-page .homepage-lower:after {
+    content: '';
+    display: table;
+    width: 100%;
+    height: 0.1px;
+    clear: both; }
+  .page-template-front-page .homepage-lower .home-header {
+    background-color: #1a1364;
+    color: #fff;
+    display: inline;
+    padding: 10px; }
 @media (min-width: 740px) {
-  .page-template-front-page .homepage-feed {
-    float: left; } }
+  .page-template-front-page .recent-posts {
+    float: left;
+    margin-right: 6%;
+    width: 47%; } }
+.page-template-front-page .recent-posts div {
+  border-top: 8px solid #1a1364; }
+.page-template-front-page .recent-posts ul {
+  list-style-type: none;
+  margin-left: 0; }
+.page-template-front-page .recent-posts li {
+  border-bottom: 1px solid #d8d8d8;
+  margin-top: 20px;
+  padding-bottom: 20px; }
+  .page-template-front-page .recent-posts li p {
+    margin: 0; }
+  .page-template-front-page .recent-posts li:first-of-type {
+    margin-top: 10px; }
+  .page-template-front-page .recent-posts li:last-of-type {
+    border-bottom: none; }
+.page-template-front-page .recent-posts a {
+  color: #7aa0cd; }
+.page-template-front-page .recent-posts .date {
+  color: #555;
+  font-size: 12px;
+  font-style: italic; }
+@media (min-width: 740px) {
+  .page-template-front-page .about {
+    float: right;
+    width: 47%; } }
+.page-template-front-page .about div {
+  border-top: 8px solid #1a1364;
+  padding-top: 15px; }
 
 /* =BLOG SPECIFIC
 ------------------ */
@@ -818,7 +861,7 @@ img {
       position: relative; }
 
 article.comment {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #d8d8d8;
   padding: 10px 0; }
 
 .comment-meta {
@@ -843,7 +886,7 @@ article.comment {
 /* Post author highlighting */
 .commentlist > li.bypostauthor,
 .commentlist .children > li.bypostauthor {
-  border: 1px solid #000;
+  border: 1px solid #d8d8d8;
   padding: 5px 10px; }
 
 .entry-title,

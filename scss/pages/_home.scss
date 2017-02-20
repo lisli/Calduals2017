@@ -29,9 +29,72 @@
 		}
 	}
 
-	.homepage-feed {
+	.homepage-lower {
+		@include clearfix;
+		margin-top: 30px;
+
+		.home-header {
+			background-color: $dark;
+			color: $bg;
+			display: inline;
+			padding: 10px;
+		}
+	}
+
+	.recent-posts {
 		@media (min-width: $s) {
 			float: left;
+			margin-right: 6%;
+			width: 47%
+		}
+
+		div {
+			border-top: 8px solid $dark;
+		}
+
+		ul {
+			list-style-type: none;
+			margin-left: 0;
+		}
+
+		li {
+			border-bottom: $border;
+			margin-top: 20px;
+			padding-bottom: 20px;
+
+			p {
+				margin: 0;
+			}
+
+			&:first-of-type {
+				margin-top: 10px;
+			}
+
+			&:last-of-type {
+				border-bottom: none;
+			}
+		}
+
+		a {
+			color: $light;
+		}
+
+		.date {
+			color: $text;
+			font-size: 12px;
+			font-style: italic;
+		}
+	}
+
+	.about {
+		@media (min-width: $s) {
+			float: right;
+			width: 47%
+		}
+
+		div {
+			border-top: 8px solid $dark;
+			padding-top: 15px;
 		}
 	}
 }
