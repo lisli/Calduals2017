@@ -16,7 +16,7 @@ gulp.task('styles', function(){
 		})
 		.pipe(gulp.dest(''))
 		.pipe(autoprefixer())
-		// .pipe(minifycss())
+		.pipe(minifycss())
 		.pipe(gulp.dest(''))
 		.pipe(livereload());
 });
