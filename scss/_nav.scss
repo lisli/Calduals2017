@@ -123,17 +123,51 @@ nav.language {
 		}
 
 		ul.sub-menu {
-			display: block;
+			// display: block;
+			margin-top: 10px !important;
 			position: absolute;
 			right: 0;
 			width: 170px;
 			z-index: 1000;
 			li {
 				display: block;
+
+				a:hover {
+					color: $dark;
+				}
+			}
+		}
+	}
+
+	.current-menu-ancestor {
+		background: $dark;
+
+		a {
+			color: $bg;
+		}
+			
+		ul.sub-menu {
+			// display: block;
+			margin-top: 10px !important;
+			position: absolute;
+			right: 0;
+			width: 170px;
+			z-index: 1000;
+			li {
+				display: block;
+
+				a {
+					color: $bg;
+					&:hover {
+						color: $dark;
+					}
+				}
 			}
 		}
 	}
 }
+
+
 
 
 
