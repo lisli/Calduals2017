@@ -3,7 +3,8 @@
 	margin: 0;
 	div {
 		float: left;
-		overflow: hidden;
+		// overflow: hidden;
+		overflow: visible;
 		position: relative;
 		width: 100%;
 	}
@@ -13,7 +14,7 @@
 		margin: 0 !important;
 		list-style: none;
 		li {
-			position: relative;
+			// position: relative;
 			display: inline-block;
 			vertical-align: middle;
 			a {
@@ -38,6 +39,8 @@
 		}
 	}
 }
+
+
 
 //styles specific to the language menu
 
@@ -104,7 +107,12 @@ nav.language {
 
 	ul li a {
 		color: $light;
-		padding: 20px;
+		padding: 16px;
+	}
+
+	ul.sub-menu {
+		background: $light;
+		display: none;
 	}
 
 	.current-menu-item {
@@ -112,6 +120,17 @@ nav.language {
 
 		a {
 			color: $bg;
+		}
+
+		ul.sub-menu {
+			display: block;
+			position: absolute;
+			right: 0;
+			width: 170px;
+			z-index: 1000;
+			li {
+				display: block;
+			}
 		}
 	}
 }

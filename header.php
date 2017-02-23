@@ -44,7 +44,7 @@
             <span>Languages:</span><?wp_nav_menu( array( 'theme_location' => 'language') ); ?>  
         </div>
     </nav>    
-	<div id="page">
+	<div id="page" class="container">
 		<header id="site-header" role="banner" class="row">   
 
 			<a href="<?php echo esc_url( home_url() ); ?>/" class="logo">

@@ -7,6 +7,13 @@ body {
 	width: 100%;
 	padding: 0 15px;
 }
+
+#main {
+	margin-top: 30px;
+	@media (min-width: $s) {
+		margin-top: 50px;
+	}
+}
 #main,
 #footer,
 .row {

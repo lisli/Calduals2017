@@ -1,4 +1,9 @@
 .page-template-front-page {
+
+	#main {
+		margin-top: 0;
+	}
+	
 	#primary {
 		img {
 			width: 100%;
@@ -6,7 +11,6 @@
 	}
 
 	.hero {
-		border-top: 10px solid #1a1364;
 		position: relative;
 
 		ul {
