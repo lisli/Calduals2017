@@ -15,8 +15,8 @@ jQuery(document).ready(function(jQuery){
 	  function() {
 	  	// console.log("hi");
 	    // jQuery( ".current-menu-ancestor ul.submenu" ).show;
-	    jQuery( ".current-menu-ancestor ul.sub-menu" ).show();
-	    jQuery( ".current-menu-item ul.sub-menu" ).show();
+	    jQuery( ".current-menu-ancestor ul.sub-menu" ).toggle();
+	    jQuery( ".current-menu-item ul.sub-menu" ).toggle();
 	  }
 	);
 });
