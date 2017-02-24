@@ -106,6 +106,8 @@ add_action( 'widgets_init', 'themeFunction_widgets_init' );
 function themeFunction_scripts() {
 	// theme style.css file
 	wp_enqueue_style( 'themeTextDomain-style', get_stylesheet_uri() );
+	//enqueue additional stylesheet for custom css to be added in addition to theme css
+	wp_enqueue_style( 'additional-styles', get_stylesheet_directory_uri() . '/custom.css' );
 	
 	// threaded comments
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
