@@ -167,6 +167,38 @@ nav.language {
 	}
 }
 
+// mega menu experimentation
+
+#mega-menu-wrap-primary {
+	background: #bg;
+	float: right;
+
+	.mega-current-menu-ancestor {
+		background: $dark;
+	}
+}
+
+#mega-menu-wrap-primary, 
+	#mega-menu-wrap-primary #mega-menu-primary, 
+	#mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, 
+	#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, 
+	#mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
+		background: transparent;;
+	}
+
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+	color: $dark;
+}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
+	text-transform: inherit;
+}
+
+.mega-current-menu-item {
+	background: $dark;
+}
+
+
+
 
 
 
