@@ -1,14 +1,10 @@
-function scriptname(){
-	jQuery(document).ready(function($){
-		// script goes here
-	});
-}
-
-// function hamburgerMenu() {
-// 	jQuery(document.ready(function($){
-
+// function scriptname(){
+// 	jQuery(document).ready(function($){
+// 		// script goes here
 // 	});
 // }
+
+
 
 jQuery(document).ready(function(jQuery){
 	jQuery( ".hamburger" ).click(
