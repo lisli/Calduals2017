@@ -167,7 +167,7 @@ nav.language {
 	}
 }
 
-// mega menu experimentation
+// mega menu experimentation / override of plugin styles
 
 #mega-menu-wrap-primary {
 	background: #bg;
@@ -176,15 +176,18 @@ nav.language {
 	.mega-current-menu-ancestor {
 		background: $dark;
 	}
+
+	#mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+		display: inline-block;
+	}
 }
 
-#mega-menu-wrap-primary, 
-	#mega-menu-wrap-primary #mega-menu-primary, 
-	#mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, 
-	#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, 
-	#mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
-		background: transparent;;
-	}
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+	display: inline-block;
+	height: auto;
+	padding: 16px;
+}
+
 
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
 	color: $dark;
@@ -198,6 +201,28 @@ nav.language {
 }
 
 
+// hover 
+
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item.mega-toggle-on > a.mega-menu-link, 
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:hover, 
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link:focus {
+	background: $dark;
+	color: $bg;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu {
+	background: $bg;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {
+	color: $dark;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-item>a.mega-menu-link,
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-ancestor>a.mega-menu-link {
+	background: $dark;
+	color: $bg;
+}
 
 
 
