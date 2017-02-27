@@ -224,7 +224,25 @@ nav.language {
 	color: $bg;
 }
 
+//hide submenus on default behavior
 
+#mega-menu-wrap-primary #mega-menu-primary.mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, 
+#mega-menu-wrap-primary #mega-menu-primary.mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, 
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, 
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {display: none;}
+ 
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item > ul.mega-sub-menu {
+	visibility: inherit;
+	display: none;
+}
+
+.hamburger {
+	font-size: 1.5em;
+	position: absolute;
+	right: 0;
+	z-index: 999;
+
+}
 
 
 
