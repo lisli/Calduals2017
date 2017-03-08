@@ -1,1 +1,150 @@
-/* ADDITIONAL STYLES */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {font-family: 'Open Sans', sans-serif; font-size:16px}
+
+#site-header img { 
+	width: 270px;
+    	margin-top: -10px;}
+
+.menu-tabbed-menu-container ul li a {
+    padding: 8px 16px 28px;
+    font-weight: 600;
+    letter-spacing: .75px;
+    font-size: 21px;
+}
+
+/*added to main stylesheet*/
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-ancestor>a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-item>a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link { 
+    /*letter-spacing: .75px;
+font-weight: 600!important;
+    font-size: 21px;
+    margin-right: 15px;
+    max-width: 180px;
+    height: 90px;
+    line-height: 28px;
+    text-align: center;*/
+}
+
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-flyout.mega-menu-item-has-children > a.mega-menu-link:after, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-flyout li.mega-menu-item-has-children > a.mega-menu-link:after, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item-has-children > a.mega-menu-link:after {display:none}
+
+.access ul li {margin-right:6px}
+
+.page-template-front-page .homepage-lower .home-header, footer .top-footer .widget-title {
+    font-weight: 600!important;
+    letter-spacing: .75px;
+    font-size: 21px;
+}
+
+.entry-title, .entry-title a {color:#1b1464}
+
+.language .container {text-align:center}
+
+/*added to main stylesheet*/
+/*.page-template-front-page .hero ul {margin-top:70px; margin-right:70px}*/
+
+.container {max-width:1120px}
+
+.page-template-front-page .hero a {
+    padding: 16px;
+    font-weight: 600;
+    letter-spacing: .75px;
+    /*added to main stylesheet*/
+    /*font-size: 21px;*/
+    opacity:.85
+}
+
+.bluebutton{
+    padding: 16px;
+    font-weight: 600;
+    letter-spacing: .75px;
+    font-size: 21px;
+    background:#4f81bd;
+    margin-right:10px;
+    display:inline-block;
+    color:#fff
+}
+
+.bluebutton:hover, a:hover, a:link:hover {color:#d11d06}
+
+.page-template-front-page .about a {margin-top:10px; display:block}
+
+.page-template-front-page .hero a:hover {
+    opacity:1
+}
+
+.menu-tabbed-menu-container ul li:hover, .access ul li:hover {background-color: #1a1364;}
+
+.menu-tabbed-menu-container ul li:hover a {color:#fff;}
+
+.page-template-front-page .homepage-lower .home-header {padding:10px 16px}
+
+.page-template-front-page .recent-posts .date {font-size:14px}
+
+nav.language ul {font-size:14px}
+
+footer .top-footer .widget {width:100%}
+
+footer .top-footer .widget-title {width:100%; background-color: transparent;}
+
+#black-studio-tinymce-2 a { 
+    color:#fff;   
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 48px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#black-studio-tinymce-2 a:hover, .page-template-front-page .recent-posts a:hover, .page-template-front-page .about a:hover {
+color:#d11d06}
+
+.s_span_4 {
+    width: 27%;
+}
+
+.col {margin-left: 7%;}
+
+img.alignleft {margin-right:2em}
+
+h3.widget-title {font-size:18px; color:#1a1364; font-weight:bold; margin-bottom: 15px;
+    margin-top: 8px;}
+
+nav.language {margin-bottom:18px}
+
+#site-header img {margin-bottom:0; margin-top:0}
+
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item {padding:30px}
+
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item>ul.mega-sub-menu {margin-top:7px!important; background:#f5f5f5}
+
+.page-id-3006 .entry-content a {display:inline-block; margin-right:20px; width:200px; margin-bottom:40px}
+
+
+li#mega-menu-item-16496 a{font-size:12px; margin-top:0; background:#ffcc00}
+
+#mega-menu-wrap-primary ul ul ul ul a {color:#666!important; margin-top:-10px!important; margin-left:10px!important; font-size:13px!important}
+
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link {
+    color: #424141; margin-bottom:10px; font-size:16px}
+
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link {font-size:18px}
+
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link:hover, #mega-menu-wrap-primary ul ul ul ul a:hover {color:#d11d06!important}
+
+.hamburger {font-size:2.5em}
+
+.page-id-16075 .hamburger {color:#fff}
+
+footer .top-footer .widget:first-of-type {background-image: url(http://calduals.flywheelsites.com/wp-content/uploads/2017/02/CalDuals-cali.png);
+    background-repeat: no-repeat;
+    background-size: contain;}
+
+footer .top-footer {background-color:#4f81bd}
+
+h2 {font-size:18px}
+
+hr {margin-bottom:1em}
+
+
+
+.entry-title, .entry-title a {font-size:24px}

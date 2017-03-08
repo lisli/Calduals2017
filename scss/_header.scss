@@ -1,9 +1,13 @@
 #site-header {
 	// margin-bottom: 45px;
-	border-bottom: 10px solid $dark;
 	position: relative;
 	// z-index: 250;
 	// margin-top: 50px;
+
+	@media (min-width: $s) {
+		border-bottom: 10px solid $dark;
+	}
+
 	.logo {
 		// display: inline-block;
 		// margin-top: 50px;
@@ -11,6 +15,9 @@
 		z-index: 250;
 	}
 	img {
-		height: auto;
+		width: 100%;
+		@media (min-width: $s) {
+			height: auto;
+		}
 	}
 }

@@ -1,7 +1,10 @@
 .page-template-front-page {
 
 	#main {
-		margin-top: 0;
+		margin-top: 32px; 
+		@media (min-width: $s) {
+			margin-top: 0;
+		}
 	}
 	
 	#primary {
@@ -14,13 +17,23 @@
 		position: relative;
 
 		ul {
+			@include clearfix;
 			margin: 0;
-			position: absolute;
-			right: 0;
-			top: 0;
+
+			@media (min-width: $s) {
+				margin: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				margin-top: 70px;
+    			margin-right: 70px;
+			}
 		}
 
 		li {
+		    width: 48%;
+		    margin-right: 2%;
+		    float: left;
 			background-color: $light;
 			list-style: none;
 			margin-bottom: 10px;
@@ -30,6 +43,11 @@
 
 		a {
 			color: #fff;
+			font-size: 14px;
+
+			@media (min-width: $xs) {
+				font-size: 21px;
+			}
 		}
 	}
 

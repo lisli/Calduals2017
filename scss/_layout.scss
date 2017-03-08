@@ -4,8 +4,10 @@ body {
 	padding: 0;
 }
 #page {
-	width: 100%;
 	// padding: 0 15px;
+	@media (min-width: $s) {
+		width: 100%;
+	}
 }
 
 #main {

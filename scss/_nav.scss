@@ -1,17 +1,21 @@
 .access {
 	@include clearfix;
 	margin: 0;
+	padding-top: 28px;
+	
 	div {
-		float: left;
-		// overflow: hidden;
-		overflow: visible;
-		position: relative;
-		width: 100%;
+		@media (min-width: $s) {
+			float: left;
+			// overflow: hidden;
+			overflow: visible;
+			position: relative;
+			width: 100%;
+		}
 	}
 	ul {
 		clear: left;
 		padding-left: 0;
-		margin: 0 !important;
+		// margin: 0 !important;
 		list-style: none;
 		li {
 			// position: relative;
@@ -232,15 +236,79 @@ nav.language {
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {display: none;}
  
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item > ul.mega-sub-menu {
-	visibility: inherit;
-	display: none;
+	// visibility: inherit;
+	// display: none;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-ancestor>a.mega-menu-link, 
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-item>a.mega-menu-link, 
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link {
+	max-width: 100%;
+	letter-spacing: .75px;
+	font-weight: 600;
+	font-size: 21px;
+
+	@media (min-width: $xs) {
+		letter-spacing: .75px;
+		font-weight: 600!important;
+	    font-size: 21px;
+	    margin-right: 15px;
+	    max-width: 180px;
+	    height: 90px;
+	    line-height: 28px;
+	    text-align: center;
+	}
+}
+
+#mega-menu-wrap-primary {
+	float: none;
+
+	@media (min-width: $xs) {
+		float: right;
+	}
+}
+
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link {
+	color: #fff;
+
+	@media (min-width: $xs) {
+		color: $dark;
+	}
+}
+
+#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:before,
+#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after {
+	color: $dark;
+}
+
+#mega-menu-wrap-primary .mega-menu-toggle {
+	background: #fff;
+}
+
+#mega-menu-wrap-primary .mega-menu-toggle.mega-menu-open + #mega-menu-primary {
+	background-color: $dark;
+	margin-top: 32px;
+	position: absolute;
+    right: 0;
+    /* left: 0; */
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+
+    @media (min-width: $s) {
+
+    }
 }
 
 .hamburger {
-	font-size: 2em;
-	position: absolute;
-	right: 2%;
-	z-index: 999;
+	display: none;
+	@media (min-width: $xs) {
+		display: block;
+		font-size: 2em;
+		position: absolute;
+		right: 2%;
+		z-index: 999;
+	}
 
 }
 
