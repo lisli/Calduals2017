@@ -179,6 +179,7 @@ nav.language {
 
 	.mega-current-menu-ancestor {
 		background: $dark;
+		color: #fff;
 	}
 
 	#mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
@@ -225,7 +226,7 @@ nav.language {
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-item>a.mega-menu-link,
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-ancestor>a.mega-menu-link {
 	background: $dark;
-	color: $bg;
+	color: #fff;
 }
 
 //hide submenus on default behavior
@@ -233,15 +234,24 @@ nav.language {
 #mega-menu-wrap-primary #mega-menu-primary.mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, 
 #mega-menu-wrap-primary #mega-menu-primary.mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, 
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, 
-#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {display: none;}
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {
+	display: none;
+}
  
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item > ul.mega-sub-menu {
-	// visibility: inherit;
-	// display: none;
+	@media (min-width: $s) {
+		visibility: inherit;
+		display: none;
+	}
 }
 
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-ancestor>a.mega-menu-link, 
-#mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-item>a.mega-menu-link, 
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-item>a.mega-menu-link {
+	color: #fff;
+}
+
+// #mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-ancestor>a.mega-menu-link, 
+// #mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-item>a.mega-menu-link, 
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link {
 	max-width: 100%;
 	letter-spacing: .75px;
@@ -295,9 +305,16 @@ nav.language {
     width: 100%;
     z-index: 1;
 
-    @media (min-width: $s) {
+    // @media (min-width: $s) {
 
-    }
+    // }
+}
+
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-ancestor>a.mega-menu-link, 
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-item>a.mega-menu-link {
+	@media (min-width: $s) {
+		color: #fff;
+	}
 }
 
 .hamburger {
