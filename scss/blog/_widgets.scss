@@ -31,3 +31,30 @@
 		display: inline-block;
 	}
 }
+
+// Header Search Widget
+
+header {
+	.widget_search {
+		float: right;
+		padding-bottom: 0;
+
+		form {
+    		margin: 0 0 10px;
+    		position: relative;
+    	}
+
+    	input[type=text] {
+    		border: 1px solid $dark;
+    	}
+
+    	button[type=submit] {
+    		background: $dark;
+    		color: white;
+    		position: absolute;
+    		right: 9px;
+		    top: 1px;
+		    padding: 3px 7px 5px;
+    	}
+	}
+}

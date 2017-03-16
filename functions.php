@@ -68,6 +68,14 @@ function themeFunction_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
+	//regular sidebar
+	register_sidebar( array(
+		'name' => __( 'Header Search', 'calduals2017' ),
+		'id' => 'header-search',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => "</div>",
+	) );
+
 	//top footer
 	register_sidebar( array(
 		'name' => __( 'Top Footer', 'calduals2017' ),
