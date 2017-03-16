@@ -46,16 +46,15 @@
     </nav>    
 	<div id="page" class="container">
 		<header id="site-header" role="banner" class="row">   
-
 			<a href="<?php echo esc_url( home_url() ); ?>/" class="logo">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg" onerror="this.onerror=null; this.src='<?php echo get_template_directory_uri(); ?>/assets/images/logo.png'" alt="<?php bloginfo('name'); ?>">
 			</a>
 
-            <?php dynamic_sidebar( 'header-search' ); ?>
-
 			<nav class="access" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			</nav><!-- #access -->  
+                <?php dynamic_sidebar( 'header-search' ); ?> 
+			</nav><!-- #access -->
+             
 		</header><!-- #branding -->
         <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
 

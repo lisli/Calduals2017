@@ -2,7 +2,10 @@
 	@include clearfix;
 	margin: 0;
 	padding-top: 28px;
-	
+	width: auto;
+	display: inline;
+	float: right;
+
 	div {
 		@media (min-width: $s) {
 			float: left;
@@ -10,6 +13,8 @@
 			overflow: visible;
 			position: relative;
 			width: 100%;
+
+
 		}
 	}
 	ul {
@@ -73,7 +78,7 @@ nav.language {
 
 	li {
 		color: $light;
-		display: inline-block;
+		display: inline;
 		&:after {
 			content: '|';
 			font-size: 16px;
@@ -174,8 +179,9 @@ nav.language {
 // mega menu experimentation / override of plugin styles
 
 #mega-menu-wrap-primary {
-	background: #bg;
-	float: right;
+	background: $bg;
+	// float: right;
+	display: inline-block;
 
 	.mega-current-menu-ancestor {
 		background: $dark;
@@ -275,6 +281,10 @@ nav.language {
 
 	@media (min-width: $xs) {
 		float: right;
+	}
+
+	@media (min-width: $s) {
+		float: none;
 	}
 }
 
