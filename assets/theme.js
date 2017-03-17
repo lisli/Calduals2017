@@ -7,12 +7,33 @@
 jQuery(document).ready(function(jQuery){
 	jQuery( ".hamburger" ).click(
 
-	  function() {
+	 function() {
 	    jQuery( ".mega-current-menu-ancestor ul.mega-sub-menu" ).toggle();
 	    jQuery( ".mega-current-menu-item ul.mega-sub-menu" ).toggle();
 	    // jQuery( ".mega-current-menu-ancestor ul.mega-sub-menu" ).css({"visibility" : "visible"});
 	    // jQuery( ".mega-current-menu-item ul.mega-sub-menu" ).css({"visibility" : "visible"});
-	  }
+	 }
 	);
+
+	// The '#theLink' portion is a selector which matches a DOM element
+	// with the id 'theLink' and .click registers a call back for the 
+	// element being clicked on 
+
+	
+
+	jQuery(document).on("click", "a", function(event) {
+
+		var internalLink = /calduals/;
+		var link = jQuery(this).attr("href");
+		var isExternal = !link.match(internalLink);
+
+		if (isExternal) {
+			event.preventDefault();
+			var answer = confirm("You are leaving Calduals. Proceed?"); 
+			if (answer) {
+				window.location = link;
+			}
+		}
+  	});
 
 });
