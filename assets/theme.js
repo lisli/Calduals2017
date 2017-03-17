@@ -5,7 +5,6 @@
 // }
 
 jQuery(document).ready(function(jQuery){
-	console.log('ugh');
 	jQuery( ".hamburger" ).click(
 
 	  function() {
