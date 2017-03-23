@@ -40,9 +40,7 @@ header {
 		padding-bottom: 0;
 		width: auto;
 		display: inline-block;
-		@media (min-width: $s) {
-    		top: 40px;
-    	}
+    	top: 40px;
 
 		form {
     		margin: 0 0 10px;

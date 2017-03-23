@@ -9,15 +9,12 @@
 	}
 
 	.logo {
-		display: inline-block;
+		// display: inline-block;
 		// margin-top: 50px;
-
-		@media (min-width: $s) {
-			position: absolute;
-			z-index: 250;
-		}
+		position: absolute;
+		z-index: 250;
 	}
-	
+
 	img {
 		width: 100%;
 		@media (min-width: $s) {
