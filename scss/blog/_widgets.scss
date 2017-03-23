@@ -40,7 +40,7 @@ header {
 		padding-bottom: 0;
 		width: auto;
 		display: inline-block;
-		@media (min-width: $s) {
+		@media (min-width: $mobile-menu) {
     		top: 40px;
     	}
 

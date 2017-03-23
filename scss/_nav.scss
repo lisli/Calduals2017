@@ -334,7 +334,7 @@ nav.language {
 
 .hamburger {
 	display: none;
-	@media (min-width: $xs) {
+	@media (min-width: $mobile-menu) {
 		display: block;
 		font-size: 2em;
 		position: absolute;
