@@ -1,10 +1,13 @@
 .access {
-	@include clearfix;
-	margin: 0;
-	padding-top: 28px;
-	width: auto;
-	display: inline;
-	float: right;
+
+	@media (min-width: $s) {
+		@include clearfix;
+		margin: 0;
+		padding-top: 28px;
+		width: auto;
+		display: inline;
+		float: right;
+	}
 
 	div {
 		@media (min-width: $s) {
@@ -181,7 +184,9 @@ nav.language {
 #mega-menu-wrap-primary {
 	background: $bg;
 	// float: right;
-	display: inline-block;
+	@media (min-width: $m) {
+		display: inline-block;
+	}
 
 	.mega-current-menu-ancestor {
 		background: $dark;
