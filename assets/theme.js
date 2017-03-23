@@ -19,8 +19,6 @@ jQuery(document).ready(function(jQuery){
 	// with the id 'theLink' and .click registers a call back for the 
 	// element being clicked on 
 
-	
-
 	jQuery(document).on("click", "a", function(event) {
 
 		var internalLink = /calduals/;
@@ -29,7 +27,7 @@ jQuery(document).ready(function(jQuery){
 
 		if (isExternal) {
 			event.preventDefault();
-			var answer = confirm("You are leaving Calduals. Proceed?"); 
+			var answer = confirm("You are now leaving CalDuals.org, the Coordinated Care Initiative’s website. When you leave this website to access a different site, you become subject to the other website’s privacy policy and practices."); 
 			if (answer) {
 				window.location = link;
 			}
