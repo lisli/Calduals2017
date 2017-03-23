@@ -10,6 +10,8 @@ jQuery(document).ready(function(jQuery){
 	 function() {
 	    jQuery( ".mega-current-menu-ancestor ul.mega-sub-menu" ).toggle();
 	    jQuery( ".mega-current-menu-item ul.mega-sub-menu" ).toggle();
+	    jQuery( ".hamburger i.fa" ).toggleClass("fa-bars");
+	    jQuery( ".hamburger i.fa" ).toggleClass("fa-times");
 	    // jQuery( ".mega-current-menu-ancestor ul.mega-sub-menu" ).css({"visibility" : "visible"});
 	    // jQuery( ".mega-current-menu-item ul.mega-sub-menu" ).css({"visibility" : "visible"});
 	 }

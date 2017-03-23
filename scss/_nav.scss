@@ -248,6 +248,8 @@ nav.language {
 	@media (min-width: $s) {
 		visibility: inherit;
 		display: none;
+		width: 140%;
+    	left: -38px;
 	}
 }
 
