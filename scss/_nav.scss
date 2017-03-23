@@ -253,6 +253,13 @@ nav.language {
 	}
 }
 
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item>ul.mega-sub-menu ul.mega-sub-menu {
+	@media (min-width: $s) {
+		width: auto;
+    	margin-left: 51px;
+	}
+}
+
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-ancestor>a.mega-menu-link, 
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-item>a.mega-menu-link {
 	color: #fff;
