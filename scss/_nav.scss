@@ -1,13 +1,10 @@
 .access {
-
-	@media (min-width: $s) {
-		@include clearfix;
-		margin: 0;
-		padding-top: 28px;
-		width: auto;
-		display: inline;
-		float: right;
-	}
+	@include clearfix;
+	margin: 0;
+	padding-top: 28px;
+	width: auto;
+	display: inline;
+	float: right;
 
 	div {
 		@media (min-width: $s) {
@@ -184,9 +181,7 @@ nav.language {
 #mega-menu-wrap-primary {
 	background: $bg;
 	// float: right;
-	@media (min-width: $m) {
-		display: inline-block;
-	}
+	display: inline-block;
 
 	.mega-current-menu-ancestor {
 		background: $dark;
@@ -334,7 +329,7 @@ nav.language {
 
 .hamburger {
 	display: none;
-	@media (min-width: $mobile-menu) {
+	@media (min-width: $xs) {
 		display: block;
 		font-size: 2em;
 		position: absolute;
