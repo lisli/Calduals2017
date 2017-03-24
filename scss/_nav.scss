@@ -1,10 +1,16 @@
 .access {
 	@include clearfix;
-	margin: 0;
-	padding-top: 28px;
-	width: auto;
-	display: inline;
-	float: right;
+	position: relative;
+    top: 33px;
+    background: transparent;
+
+	@media (min-width: $s) {
+		margin: 0;
+		width: auto;
+		display: inline;
+		float: right;
+		padding-top: 28px;
+	}
 
 	div {
 		@media (min-width: $s) {
@@ -13,8 +19,6 @@
 			overflow: visible;
 			position: relative;
 			width: 100%;
-
-
 		}
 	}
 	ul {
@@ -179,9 +183,11 @@ nav.language {
 // mega menu experimentation / override of plugin styles
 
 #mega-menu-wrap-primary {
-	background: $bg;
+	background: transparent;
 	// float: right;
-	display: inline-block;
+	@media (min-width: $s) {
+		display: inline-block;
+	}
 
 	.mega-current-menu-ancestor {
 		background: $dark;
@@ -311,12 +317,11 @@ nav.language {
 }
 
 #mega-menu-wrap-primary .mega-menu-toggle {
-	background: #fff;
+	background: transparent;
 }
 
 #mega-menu-wrap-primary .mega-menu-toggle.mega-menu-open + #mega-menu-primary {
 	background-color: $dark;
-	margin-top: 32px;
 	position: absolute;
     right: 0;
     /* left: 0; */
@@ -324,9 +329,9 @@ nav.language {
     width: 100%;
     z-index: 1;
 
-    // @media (min-width: $s) {
-
-    // }
+    @media (min-width: $s) {
+    	margin-top: 32px;
+    }
 }
 
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-ancestor>a.mega-menu-link, 
