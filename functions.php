@@ -30,8 +30,8 @@ function themeFunction_setup() {
 	// Add custom nav menu support
 	register_nav_menu( 'primary', __( 'Primary Menu', 'themeTextDomain' ) );
 
-	// Add custom tabbed menu
-	//register_tabbed_menu( 'tabbed', __( 'Tabbed Menu', 'themeTextDomain' ) );
+	//Add custom View Everything Page menu
+	register_nav_menu( 'view-everything', __( 'View Everything', 'themeTextDomain' ) );
 
 	// Add custom language menu
 	register_nav_menu( 'language', __( 'Language Menu', 'themeTextDomain' ) );
