@@ -237,27 +237,27 @@ nav.language {
 
 //hide submenus on default behavior
 
-#mega-menu-wrap-primary #mega-menu-primary.mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, 
-#mega-menu-wrap-primary #mega-menu-primary.mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, 
-#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, 
-#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {
-	display: none;
-}
+// #mega-menu-wrap-primary #mega-menu-primary.mega-no-js li.mega-menu-item:hover > ul.mega-sub-menu, 
+// #mega-menu-wrap-primary #mega-menu-primary.mega-no-js li.mega-menu-item:focus > ul.mega-sub-menu, 
+// #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, 
+// #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {
+// 	display: none;
+// }
  
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item > ul.mega-sub-menu {
-	@media (min-width: $s) {
-		visibility: inherit;
-		display: none;
-		width: 140%;
-    	left: -38px;
-	}
+	// @media (min-width: $s) {
+	// 	visibility: inherit;
+	// 	// display: none;
+	// 	width: 140%;
+ //    	left: -38px;
+	// }
 }
 
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item>ul.mega-sub-menu ul.mega-sub-menu {
-	@media (min-width: $s) {
-		width: auto;
-    	margin-left: 51px;
-	}
+	// @media (min-width: $s) {
+	// 	width: auto;
+ //    	margin-left: 51px;
+	// }
 }
 
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-ancestor>a.mega-menu-link, 

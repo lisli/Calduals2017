@@ -56,7 +56,7 @@
 			</nav><!-- #access -->
              
 		</header><!-- #branding -->
-        <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <!-- <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div> -->
 
 
 		<div id="main" class="row">

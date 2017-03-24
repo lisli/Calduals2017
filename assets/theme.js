@@ -5,17 +5,17 @@
 // }
 
 jQuery(document).ready(function(jQuery){
-	jQuery( ".hamburger" ).click(
+	// jQuery( ".hamburger" ).click(
 
-	 function() {
-	    jQuery( ".mega-current-menu-ancestor ul.mega-sub-menu" ).toggle();
-	    jQuery( ".mega-current-menu-item ul.mega-sub-menu" ).toggle();
-	    jQuery( ".hamburger i.fa" ).toggleClass("fa-bars");
-	    jQuery( ".hamburger i.fa" ).toggleClass("fa-times");
-	    // jQuery( ".mega-current-menu-ancestor ul.mega-sub-menu" ).css({"visibility" : "visible"});
-	    // jQuery( ".mega-current-menu-item ul.mega-sub-menu" ).css({"visibility" : "visible"});
-	 }
-	);
+	//  function() {
+	//     jQuery( ".mega-current-menu-ancestor ul.mega-sub-menu" ).toggle();
+	//     jQuery( ".mega-current-menu-item ul.mega-sub-menu" ).toggle();
+	//     jQuery( ".hamburger i.fa" ).toggleClass("fa-bars");
+	//     jQuery( ".hamburger i.fa" ).toggleClass("fa-times");
+	//     // jQuery( ".mega-current-menu-ancestor ul.mega-sub-menu" ).css({"visibility" : "visible"});
+	//     // jQuery( ".mega-current-menu-item ul.mega-sub-menu" ).css({"visibility" : "visible"});
+	//  }
+	// );
 
 	// The '#theLink' portion is a selector which matches a DOM element
 	// with the id 'theLink' and .click registers a call back for the 
