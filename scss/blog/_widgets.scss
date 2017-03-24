@@ -41,7 +41,7 @@ header {
 		width: auto;
 		display: inline-block;
 
-    	@media (min-width: $s) {
+    	@media (min-width: $mobileNav) {
     		top: 40px;
     	}
 
