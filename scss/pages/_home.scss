@@ -31,9 +31,7 @@
 		}
 
 		li {
-		    width: 49%;
-		    margin-right: 2%;
-		    float: left;
+		    
 			background-color: $light;
 			list-style: none;
 			margin-bottom: 10px;
@@ -41,6 +39,9 @@
     		text-align: center;
 
     		@media (min-width: $s) {
+    			width: 49%;
+			    margin-right: 2%;
+			    float: left;
     			float: none;
     			margin-right: 0;
     			width: 100%;
