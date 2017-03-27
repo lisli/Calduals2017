@@ -84,24 +84,25 @@ $organizer = tribe_get_organizer();
 	$type = $fields['Type'];
 	$county = $fields['County'];
 ?>
+<div class="calendar-custom-fields-content">
+	<?php if( $audience): ?>
+	<div class="tribe-events custom-field audience">
+		<span>Audience: <?php echo $audience; ?></span>
+	</div>
+	<?php endif;?>
 
-<?php if( $audience): ?>
-<div class="tribe-events custom-field audience">
-	<span>Audience: <?php echo $audience; ?></span>
-</div>
-<?php endif;?>
+	<?php if( $type): ?>
+	<div class="tribe-events custom-fields type">
+		<span>Type: <?php echo $type; ?></span>
+	</div>
+	<?php endif;?>
 
-<?php if( $type): ?>
-<div class="tribe-events custom-fields type">
-	<span>Type: <?php echo $type; ?></span>
+	<?php if( $county): ?>
+	<div class="tribe-events custom-fields county">
+		<span>County: <?php echo $county; ?></span>
+	</div>
+	<?php endif;?>
 </div>
-<?php endif;?>
-
-<?php if( $county): ?>
-<div class="tribe-events custom-fields county">
-	<span>County: <?php echo $county; ?></span>
-</div>
-<?php endif;?>
 
 
 <?php
