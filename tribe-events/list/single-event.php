@@ -76,30 +76,30 @@ $organizer = tribe_get_organizer();
 	<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more" rel="bookmark"><?php esc_html_e( 'Find out more', 'the-events-calendar' ) ?> &raquo;</a>
 </div><!-- .tribe-events-list-event-description -->
 <?php $fields = tribe_get_custom_fields();
-	foreach ( $fields as $name => $value ):
-	     echo $name . ': ' . $value;
-	endforeach;
+	// foreach ( $fields as $name => $value ):
+	//      echo $name . ': ' . $value;
+	// endforeach;
 
-	$audience = $fields['audience'];
-	$type = $fields['type'];
-	$county = $fields['county'];
+	$audience = $fields['Audience'];
+	$type = $fields['Type'];
+	$county = $fields['County'];
 ?>
 
 <?php if( $audience): ?>
-<div>
-	<?php echo $audience; ?>
+<div class="tribe-events custom-field audience">
+	<span>Audience: <?php echo $audience; ?></span>
 </div>
 <?php endif;?>
 
 <?php if( $type): ?>
-<div>
-	<?php echo $type; ?>
+<div class="tribe-events custom-fields type">
+	<span>Type: <?php echo $type; ?></span>
 </div>
 <?php endif;?>
 
 <?php if( $county): ?>
-<div>
-	<?php echo $county; ?>
+<div class="tribe-events custom-fields county">
+	<span>County: <?php echo $county; ?></span>
 </div>
 <?php endif;?>
 
