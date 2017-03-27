@@ -75,33 +75,21 @@ $organizer = tribe_get_organizer();
 	<?php echo tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ); ?>
 	<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="tribe-events-read-more" rel="bookmark"><?php esc_html_e( 'Find out more', 'the-events-calendar' ) ?> &raquo;</a>
 </div><!-- .tribe-events-list-event-description -->
-<?php $fields = tribe_get_custom_fields();
-	// foreach ( $fields as $name => $value ):
-	//      echo $name . ': ' . $value;
-	// endforeach;
 
-	$audience = $fields['Audience'];
-	$type = $fields['Type'];
-	$county = $fields['County'];
-?>
+<!-- Event Custom Fields Content -->
 <div class="calendar-custom-fields-content">
-	<?php if( $audience): ?>
-	<div class="tribe-events custom-field audience">
-		<span>Audience: <?php echo $audience; ?></span>
+	<?php $fields = tribe_get_custom_fields();
+	foreach ( $fields as $name => $value ): ?>
+	<div class="tribe-events custom-field-content">
+		<span> <?php echo esc_html( $name );  ?>: </span>
+		<span class="tribe-meta-value">
+			<?php
+			// This can hold HTML. The values are cleansed upstream
+			echo $value;
+			?>
+		</span>
 	</div>
-	<?php endif;?>
-
-	<?php if( $type): ?>
-	<div class="tribe-events custom-fields type">
-		<span>Type: <?php echo $type; ?></span>
-	</div>
-	<?php endif;?>
-
-	<?php if( $county): ?>
-	<div class="tribe-events custom-fields county">
-		<span>County: <?php echo $county; ?></span>
-	</div>
-	<?php endif;?>
+<?php endforeach ?>
 </div>
 
 
