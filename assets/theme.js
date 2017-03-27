@@ -23,11 +23,9 @@ jQuery(document).ready(function(jQuery){
 
 	jQuery(document).on("click", "a", function(event) {
 
-		var internalLink = /calduals/;
-		var jumpLink = /#/;
+		var internalLink = /(calduals|^#)/; //regex to look for 'calduals' or anything that starts with '#' to account for jump links
 		var link = jQuery(this).attr("href");
-		var isExternal = (!link.match(internalLink) && !link.match(jumpLink)) ;
-
+		var isExternal = (!link.match(internalLink));
 		if (isExternal) {
 			event.preventDefault();
 			var answer = confirm("You are now leaving CalDuals.org, the Coordinated Care Initiative’s website. When you leave this website to access a different site, you become subject to the other website’s privacy policy and practices."); 
