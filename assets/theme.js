@@ -24,8 +24,9 @@ jQuery(document).ready(function(jQuery){
 	jQuery(document).on("click", "a", function(event) {
 
 		var internalLink = /calduals/;
+		var jumpLink = /#/;
 		var link = jQuery(this).attr("href");
-		var isExternal = !link.match(internalLink);
+		var isExternal = (!link.match(internalLink) && !link.match(jumpLink)) ;
 
 		if (isExternal) {
 			event.preventDefault();
