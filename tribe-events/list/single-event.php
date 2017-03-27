@@ -84,19 +84,20 @@ $organizer = tribe_get_organizer();
 	$type = $fields['type'];
 	$county = $fields['county'];
 ?>
-<?php if( $audience) ?>
+
+<?php if( $audience): ?>
 <div>
 	<?php echo $audience; ?>
 </div>
 <?php endif;?>
 
-<?php if( $type) ?>
+<?php if( $type): ?>
 <div>
 	<?php echo $type; ?>
 </div>
 <?php endif;?>
 
-<?php if( $county) ?>
+<?php if( $county): ?>
 <div>
 	<?php echo $county; ?>
 </div>
