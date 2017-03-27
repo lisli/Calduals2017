@@ -188,6 +188,8 @@ nav.language {
 	// float: right;
 	@media (min-width: $mobileNav) {
 		display: inline-block;
+		width: 700px!important;
+    	margin-right: -160px;
 	}
 
 	.mega-current-menu-ancestor {

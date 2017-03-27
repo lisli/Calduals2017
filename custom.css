@@ -1,33 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+h2 {color:#333336; margin-bottom:8px}
+
 body {font-family: 'Open Sans', sans-serif; font-size:16px}
+
+.access {padding-top:0}
 
 #site-header img { 
 	width: 270px;
-    	margin-top: -10px;}
-
-.menu-tabbed-menu-container ul li a {
-    padding: 8px 16px 28px;
-    font-weight: 600;
-    letter-spacing: .75px;
-    font-size: 21px;
-}
-
-/*added to main stylesheet*/
-#mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-ancestor>a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary>li.mega-current-menu-item>a.mega-menu-link, #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link { 
-    /*letter-spacing: .75px;
-font-weight: 600!important;
-    font-size: 21px;
-    margin-right: 15px;
-    max-width: 180px;
-    height: 90px;
-    line-height: 28px;
-    text-align: center;*/
-}
-
-#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-flyout.mega-menu-item-has-children > a.mega-menu-link:after, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-flyout li.mega-menu-item-has-children > a.mega-menu-link:after, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item-has-children > a.mega-menu-link:after {display:none}
-
-.access ul li {margin-right:6px}
+	margin-bottom:0; 
+	margin-top:0}
 
 .page-template-front-page .homepage-lower .home-header, footer .top-footer .widget-title {
     font-weight: 600!important;
@@ -39,19 +21,8 @@ font-weight: 600!important;
 
 .language .container {text-align:center}
 
-/*added to main stylesheet*/
-/*.page-template-front-page .hero ul {margin-top:70px; margin-right:70px}*/
-
 .container {max-width:1120px}
 
-.page-template-front-page .hero a {
-    padding: 16px;
-    font-weight: 600;
-    letter-spacing: .75px;
-    /*added to main stylesheet*/
-    /*font-size: 21px;*/
-    opacity:.85
-}
 
 .bluebutton{
     padding: 16px;
@@ -66,37 +37,6 @@ font-weight: 600!important;
 
 .bluebutton:hover, a:hover, a:link:hover {color:#d11d06}
 
-.page-template-front-page .about a {margin-top:10px; display:block}
-
-.page-template-front-page .hero a:hover {
-    opacity:1
-}
-
-.menu-tabbed-menu-container ul li:hover, .access ul li:hover {background-color: #1a1364;}
-
-.menu-tabbed-menu-container ul li:hover a {color:#fff;}
-
-.page-template-front-page .homepage-lower .home-header {padding:10px 16px}
-
-.page-template-front-page .recent-posts .date {font-size:14px}
-
-nav.language ul {font-size:14px}
-
-footer .top-footer .widget {width:100%}
-
-footer .top-footer .widget-title {width:100%; background-color: transparent;}
-
-#black-studio-tinymce-2 a { 
-    color:#fff;   
-    display: inline-block;
-    margin-left: 12px;
-    margin-right: 48px;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-#black-studio-tinymce-2 a:hover, .page-template-front-page .recent-posts a:hover, .page-template-front-page .about a:hover {
-color:#d11d06}
 
 .s_span_4 {
     width: 27%;
@@ -106,19 +46,40 @@ color:#d11d06}
 
 img.alignleft {margin-right:2em}
 
-h3.widget-title {font-size:18px; color:#1a1364; font-weight:bold; margin-bottom: 15px;
-    margin-top: 8px;}
+.page-id-3006 .entry-content a {display:inline; margin-right:20px; width:100%; margin-bottom:40px}
+
+h2 {font-size:18px}
+
+hr {margin-bottom:1em}
+
+.entry-title, .entry-title a {font-size:24px}
+
+
+
+/*Navigation*/
 
 nav.language {margin-bottom:18px}
 
-#site-header img {margin-bottom:0; margin-top:0}
+nav.language ul {font-size:14px}
+
+.menu-tabbed-menu-container ul li a {
+    padding: 8px 16px 28px;
+    font-weight: 600;
+    letter-spacing: .75px;
+    font-size: 21px;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-flyout.mega-menu-item-has-children > a.mega-menu-link:after, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-flyout li.mega-menu-item-has-children > a.mega-menu-link:after, #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item-has-children > a.mega-menu-link:after {display:none}
+
+.access ul li {margin-right:6px}
+
+.menu-tabbed-menu-container ul li:hover, .access ul li:hover {background-color: #1a1364;}
+
+.menu-tabbed-menu-container ul li:hover a {color:#fff;}
 
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item {padding:30px}
 
-#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item>ul.mega-sub-menu {margin-top:7px!important; background:#f5f5f5}
-
-.page-id-3006 .entry-content a {display:inline-block; margin-right:20px; width:200px; margin-bottom:40px}
-
+#mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item>ul.mega-sub-menu {border-top: 3px solid #1a1364;background:#f5f5f5; margin-bottom:10px}
 
 li#mega-menu-item-16496 a{font-size:12px; margin-top:0; background:#ffcc00}
 
@@ -133,18 +94,121 @@ li#mega-menu-item-16496 a{font-size:12px; margin-top:0; background:#ffcc00}
 
 .hamburger {font-size:2.5em}
 
-.page-id-16075 .hamburger {color:#fff}
+/*Home Page*/
+
+.page-template-front-page .hero a {
+    padding: 16px;
+    font-weight: 600;
+    letter-spacing: .75px;
+    opacity:.85
+}
+
+.page-template-front-page .about a {margin-top:10px; display:block}
+
+.page-template-front-page .hero a:hover {
+    opacity:1
+}
+
+.page-template-front-page .homepage-lower .home-header {padding:10px 16px}
+
+.page-template-front-page .recent-posts .date {font-size:14px}
+
+
+/*FOOTER*/
+
+footer .top-footer {background-color:#4f81bd}
+
+
+footer .top-footer .widget {width:100%}
+
+footer .top-footer .widget-title {width:100%; background-color: transparent;}
 
 footer .top-footer .widget:first-of-type {background-image: url(http://calduals.flywheelsites.com/wp-content/uploads/2017/02/CalDuals-cali.png);
     background-repeat: no-repeat;
     background-size: contain;}
 
-footer .top-footer {background-color:#4f81bd}
 
-h2 {font-size:18px}
+/*SIDEBAR*/
 
-hr {margin-bottom:1em}
+h3.widget-title {font-size:18px; color:#1a1364; font-weight:bold; margin-bottom: 15px;
+    margin-top: 8px;}
+
+#black-studio-tinymce-2 a { 
+    color:#fff;   
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 48px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#black-studio-tinymce-2 a:hover, .page-template-front-page .recent-posts a:hover, .page-template-front-page .about a:hover {
+color:#d11d06}
 
 
 
-.entry-title, .entry-title a {font-size:24px}
+/*EVENTS FILTER*/
+
+#tribe-bar-form, .tribe-bar-views-inner, #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a {background:#fff}
+
+#tribe-bar-form .tribe-bar-filters-inner {
+    border: 3px solid #1a1364;
+    }
+
+#tribe-bar-form .tribe-bar-filters-inner::placeholder {
+    }
+
+.tribe-events-list-separator-month {background-color:#1a1364; color:#fff; font-size:18px}
+
+
+#tribe_events_filters_wrapper.tribe-events-filters-horizontal, .tribe-filters-closed #tribe_events_filters_wrapper.tribe-events-filters-horizontal, .tribe-events-filters-content {background:none!important; border-left:none!important; border-right:none!important}
+
+#tribe-events .tribe-events-button, .tribe-events-button {
+    background-color: #4f81bd;
+    border-radius: 0px;}
+
+.tribe-events-filters-content {border-left:none; border-right:none; width:85%}
+
+.tribe-events-filters-horizontal #tribe_events_filter_control a {color:#4f81bd}
+
+#tribe-bar-form .tribe-bar-submit input[type=submit] {background: #4f81bd;}
+
+.tribe-events-filter-view .tribe-events-list h2.tribe-events-page-title {color: #1b1464;
+    font-size: 24px;
+    font-weight: 600;
+margin-top:0
+}
+
+.tribe-events-list-separator-month {margin: 1.25em 0 0;}
+
+#tribe_events_filter_control {display:none}
+
+.single-tribe_events #tribe-events-header .tribe-events-sub-nav {display:none}
+
+/*WP ACCESSIBILITY*/
+
+.fontsize, .fontsize h1, .fontsize h2, .fontsize h3, .fontsize h4, .fontsize h5, .fontsize h6, .fontsize p, .fontsize li:not(.a11y-toolbar-list-item), .fontsize label, .fontsize input, .fontsize select, .fontsize textarea, .fontsize legend, .fontsize code, .fontsize pre, .fontsize dd, .fontsize dt, .fontsize blockquote, .fontsize .excerpt, .fontsize #black-studio-tinymce-2 a, .fontsize #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item > a.mega-menu-link, .fontsize #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link {font-size:125%!important}
+
+
+.fontsize input {font-size:100%!important}
+
+/*FONT AWESOME*/
+
+#footer a i, #footer a {color:#fff; }
+
+
+#footer a i {margin-right:15px}
+
+#footer a:hover, #footer a i:hover {color:#d11d06}
+
+
+/*MEDIA*/
+
+/*added to scss partial*/
+
+/*@media (min-width: 740px) {
+
+#mega-menu-wrap-primary {  
+    width: 700px!important;
+    margin-right: -160px;
+}}*/
