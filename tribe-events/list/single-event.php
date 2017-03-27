@@ -79,6 +79,29 @@ $organizer = tribe_get_organizer();
 	foreach ( $fields as $name => $value ):
 	     echo $name . ': ' . $value;
 	endforeach;
+
+	$audience = $fields['audience'];
+	$type = $fields['type'];
+	$county = $fields['county'];
 ?>
+<?php if( $audience) ?>
+<div>
+	<?php echo $audience; ?>
+</div>
+<?php endif;?>
+
+<?php if( $type) ?>
+<div>
+	<?php echo $type; ?>
+</div>
+<?php endif;?>
+
+<?php if( $county) ?>
+<div>
+	<?php echo $county; ?>
+</div>
+<?php endif;?>
+
+
 <?php
 do_action( 'tribe_events_after_the_content' );
