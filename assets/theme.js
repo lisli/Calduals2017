@@ -30,7 +30,7 @@ jQuery(document).ready(function(jQuery){
 			event.preventDefault();
 			var answer = confirm("You are now leaving CalDuals.org, the Coordinated Care Initiative’s website. When you leave this website to access a different site, you become subject to the other website’s privacy policy and practices."); 
 			if (answer) {
-				window.location = link;
+				window.open(link, '_blank');
 			}
 		}
   	});
