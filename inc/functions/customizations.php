@@ -44,8 +44,19 @@
 //add_filter('pre_get_posts','themeFunction_custom_query');
 
 //Read More Links on Archive Excerpts
-function excerpt_read_more( $more ) {
-	    return ' [...] <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'health-access2017') . '</a>';
+function ly_excerpt_read_more( $more ) {
+	    return ' [...] <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'calduals-2017') . '</a>';
 	}
-add_filter( 'excerpt_more', 'excerpt_read_more' );
+add_filter( 'excerpt_more', 'ly_excerpt_read_more' );
+
+//Hide Protexted posts in loop
+function ly_password_post_filter( $where = '' ) {
+    if (!is_single() && !is_admin()) {
+        $where .= " AND post_password = ''";
+    }
+    return $where;
+}
+add_filter( 'posts_where', 'ly_password_post_filter' );
+
+
 ?>
