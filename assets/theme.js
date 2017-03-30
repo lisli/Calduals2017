@@ -23,7 +23,7 @@ jQuery(document).ready(function(jQuery){
 
 	jQuery(document).on("click", "a", function(event) {
 
-		var internalLink = /(calduals|^#)/; //regex to look for 'calduals' or anything that starts with '#' to account for jump links
+		var internalLink = /(calduals|^#|^mailto:)/; //regex to look for 'calduals' or anything that starts with '#' to account for jump links
 		var link = jQuery(this).attr("href");
 		var isExternal = (!link.match(internalLink));
 		if (isExternal) {
