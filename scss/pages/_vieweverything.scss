@@ -1,0 +1,36 @@
+.view-everything {
+	.menu-view-everything-container {
+		border-bottom: 5px solid $lightGrey;
+
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+
+	ul {
+		display: inline;
+		list-style-type: none;
+		margin: 0;
+	}
+
+	li {
+		display: inline-block;
+		list-style-type: none;
+		margin: 0 0 1em 2.5em;
+
+		&:first-of-type {
+			margin-left: 0;
+		}
+
+		.sub-menu {
+			li {
+				display: inline-block;
+				margin-bottom: 0;
+
+				&:first-of-type {
+					margin-left: 2.5em;
+				}
+			}
+		}
+	}
+}
