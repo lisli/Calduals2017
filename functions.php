@@ -30,8 +30,13 @@ function themeFunction_setup() {
 	// Add custom nav menu support
 	register_nav_menu( 'primary', __( 'Primary Menu', 'themeTextDomain' ) );
 
-	//Add custom View Everything Page menu
-	register_nav_menu( 'view-everything', __( 'View Everything', 'themeTextDomain' ) );
+	//Add custom View Everything Page menus
+	register_nav_menu( 'view-everything-1', __( 'View Everything 1', 'themeTextDomain' ) );
+	register_nav_menu( 'view-everything-2', __( 'View Everything 2', 'themeTextDomain' ) );
+	register_nav_menu( 'view-everything-3', __( 'View Everything 3', 'themeTextDomain' ) );
+	register_nav_menu( 'view-everything-4', __( 'View Everything 4', 'themeTextDomain' ) );
+	register_nav_menu( 'view-everything-5', __( 'View Everything 5', 'themeTextDomain' ) );
+	register_nav_menu( 'view-everything-6', __( 'View Everything 6', 'themeTextDomain' ) );
 
 	// Add custom language menu
 	register_nav_menu( 'language', __( 'Language Menu', 'themeTextDomain' ) );

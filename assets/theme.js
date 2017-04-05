@@ -24,8 +24,8 @@ jQuery(document).ready(function(jQuery){
 		var internalLink = /(calduals|^#|^mailto:)/; //regex to look for 'calduals' or anything that starts with '#' to account for jump links
 		var link = jQuery(this).attr("href");
 		var isExternal = (!link.match(internalLink));
-		var isDocument = \.pdf|\.doc|\.docx\ //regex to look for pdfs or other documents that may open
-
+		var documentLink = /(\.pdf|\.doc|\.docx)/; //regex to look for pdfs or other documents that may open
+		var isDocument = (link.match(documentLink)); //determine if link is to a .pdf, .doc, or .docx
 		if (isExternal) {
 			event.preventDefault();
 			var answer = confirm("You are now leaving CalDuals.org, the Coordinated Care Initiative’s website. When you leave this website to access a different site, you become subject to the other website’s privacy policy and practices."); 
@@ -35,6 +35,7 @@ jQuery(document).ready(function(jQuery){
 		}
 
 		if(isDocument) {
+			event.preventDefault();
 			window.open(link, '_blank');
 		}
   	});
