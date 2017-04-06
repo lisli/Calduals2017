@@ -1,9 +1,28 @@
 .view-everything {
-	.menu-view-everything-container {
+	.menu-view-everything-1-container, 
+	.menu-view-everything-2-container, 
+	.menu-view-everything-3-container, 
+	.menu-view-everything-4-container, 
+	.menu-view-everything-5-container {
 		border-bottom: 5px solid $lightGrey;
+		padding: 25px 0;
 
-		&:last-of-type {
-			border-bottom: none;
+	}
+
+	.menu-view-everything-1-container {
+		.sub-menu {
+			display: block;
+			margin-top: 1em;
+		}
+
+		.sub-menu li {
+			margin-bottom: 1em;
+		}
+	}
+
+	.menu-view-everything-4-container {
+		.sub-menu li {
+			margin-bottom: 1em;
 		}
 	}
 
@@ -16,7 +35,7 @@
 	li {
 		display: inline-block;
 		list-style-type: none;
-		margin: 0 0 1em 2.5em;
+		margin: 0 0 0 2.5em;
 
 		&:first-of-type {
 			margin-left: 0;
