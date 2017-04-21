@@ -20,9 +20,8 @@
 	}
 
 	img {
-		// width: 100%;
-		// width: 270px;
-		margin-bottom:0; 
+		max-width: 250px;
+		margin-bottom: 0; 
 		margin-top: 0;
 		@media (min-width: $s) {
 			height: auto;
