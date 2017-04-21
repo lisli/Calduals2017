@@ -10,11 +10,14 @@ body {font-family: 'Open Sans', sans-serif; font-size:16px}
 
 .access {padding-top:0}
 
-#site-header img { 
+
+/*added to scss partial*/
+
+/*#site-header img { 
 	width: 270px;
 	margin-bottom:0; 
 	margin-top:0}
-
+*/
 .page-template-front-page .homepage-lower .home-header, footer .top-footer .widget-title {
     font-weight: 600!important;
     letter-spacing: .75px;
@@ -42,12 +45,13 @@ body {font-family: 'Open Sans', sans-serif; font-size:16px}
 
 .bluebutton:hover, a:hover, a:link:hover {color:#d11d06}
 
-
-.s_span_4 {
+/*this is breaking the columns — class names with "span" in them are reused for responsive columns & breakpoints*/
+/*.s_span_4 {
     width: 27%;
-}
+}*/
 
-.col {margin-left: 7%;}
+/*this also kind of messed up the columns*/
+/*.col {margin-left: 7%;}*/
 
 img.alignleft {margin-right:2em}
 
@@ -82,7 +86,8 @@ nav.language ul {font-size:14px}
 
 .menu-tabbed-menu-container ul li:hover a {color:#fff;}
 
-#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item {padding:30px}
+/*added to scss partial*/
+/*#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item {padding:30px}*/
 
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item>ul.mega-sub-menu {border-top: 3px solid #1a1364;background:#f5f5f5; margin-bottom:10px}
 
@@ -286,8 +291,7 @@ a.bluebutton:hover, .page-id-16592 img.size-full:hover {opacity:.85}
 .page-item-16193 {margin-top:20px}
 .page-item-16713 {margin-top:15px}
 
-/*commenting out this line for new view everything page*/
-/*.page-id-17063 .sub-menu {margin-left:1.5em}*/
+.page-id-17063 .sub-menu {margin-left:1.5em}
 
 #secondary ul.child-sidebar-menu li a, ul.child-sidebar-menu li, .page-id-17063 #main .sub-menu li a, .page-id-17063 #main .sub-menu li  {font-size: 16px; color: #555}
 
@@ -326,7 +330,7 @@ ul.child-sidebar-menu {margin-top: 0px}
 
 .menu-about-container, .menu-everything-else-container {float:left}
 
-.menu-about-container ul, .menu-everything-else-container ul {list-style: none;}
+.menu-about-container ul, .menu-everything-else-container ul, #secondary #nav_menu-6 ul {list-style: none;}
 
 #secondary .current_page_ancestor .current_page_ancestor .children {
     display: block;
@@ -334,20 +338,109 @@ ul.child-sidebar-menu {margin-top: 0px}
 
 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:hover {background-color:#4e82be}
 
-ul.parent-sidebar-menu {
+ul.parent-sidebar-menu, #secondary #nav_menu-6 {
     background: #efefef;
     padding: 24px;  
 }
 
-.parent-sidebar-menu li.page_item_has_children, .parent-sidebar-menu li.page_item.page_item {
+#secondary #nav_menu-6 ul li a {color:#555}
+
+.parent-sidebar-menu li.page_item_has_children, .parent-sidebar-menu li.page_item.page_item, #secondary #nav_menu-6 ul li {
     border-bottom: thin solid #fff; padding:5px
 }
 .parent-sidebar-menu li.page_item_has_children li {
     border-bottom: none!important;
 }
 
+.page-template-front-page .recent-posts ul {margin-bottom:.5em}
+
 #secondary ul.child-sidebar-menu li a, ul.child-sidebar-menu li {margin-top:5px}
 
 .parent-sidebar-menu li.page_item.current_page_ancestor.current_page_parent.has_children {
     border-bottom: none;
 }
+
+.page-template-front-page .recent-posts li:last-of-type {
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.page-template-page-view-everything #main a {font-size:18px}
+
+.page-id-17063 .sub-menu {
+    margin-left: 0;
+}
+
+.view-everything .menu-view-everything-1-container .sub-menu li, .view-everything .menu-view-everything-4-container .sub-menu li {margin-right:.5em}
+
+.view-everything .menu-view-everything-1-container .sub-menu li, .view-everything .menu-view-everything-4-container .sub-menu li, .view-everything .menu-view-everything-6-container .sub-menu li {
+    margin-bottom: 0;
+}
+
+.view-everything li {
+    margin: 0 1.7em 0 .5em;
+}
+
+/*added to scss partial*/
+/*#mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu {
+    box-shadow: 8px 12px 18px #ccc;
+}*/
+
+ul.mega-sub-menu ul, ul.mega-sub-menu ul li {
+    box-shadow: none!important;  
+}
+
+
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item li.mega-menu-item > a.mega-menu-link {margin-bottom:16px}
+
+.view-everything .menu-view-everything-1-container .sub-menu, .view-everything .menu-view-everything-6-container .sub-menu {display:inline}
+
+li#menu-item-18001 {
+    margin-left: 185px;
+}
+
+
+.page-id-17063 #main li#menu-item-17995 .sub-menu li {width:159px}
+
+/*.page-id-17063 #main .sub-menu li#menu-item-18008 {width:57px}
+
+.page-id-17063 #main  .sub-menu li#menu-item-18014 {width:31px}
+
+.page-id-17063 #main .sub-menu li#menu-item-18014 {width:70px}*/
+
+li#menu-item-18010, li#menu-item-18011, li#menu-item-18021, li#menu-item-18022, li#menu-item-18024, li#menu-item-18015, li#menu-item-18095, li#menu-item-18097, li#menu-item-18094, li#menu-item-18099 {
+    border-left: 4px solid #efefef;
+    padding-left: 22px;
+}
+
+li#menu-item-18015 {
+    margin-left: -2px;
+}
+
+.page-id-17063 #main .sub-menu li#menu-item-18038 {margin-right:0}
+
+.view-everything .menu-view-everything-7-container {
+    padding: 25px 0; 
+}
+
+.view-everything li .sub-menu li#menu-item-18033 {margin-left:1.65em!important} 
+li#menu-item-18023 {
+    margin-left: 0; margin-top:10px
+}
+
+.view-everything .menu-view-everything-1-container, .view-everything .menu-view-everything-2-container, .view-everything .menu-view-everything-3-container, .view-everything .menu-view-everything-4-container, .view-everything .menu-view-everything-5-container, .view-everything .menu-view-everything-6-container {
+    border-bottom: 3px solid #ddd;
+}
+
+.page-template-page-view-everything #page .bluebutton {display:none} 
+
+button#my-back-button {
+    margin-bottom: 14px;
+    padding: 5px 10px;
+    background-color: #efefef;
+    color: #555;
+    color: #538abd;
+    font-weight: bold;
+}
+
+
+.page-id-9671 h1.title, .page-id-9353 h1.title {text-align:right}

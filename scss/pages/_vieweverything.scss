@@ -9,7 +9,12 @@
 
 	}
 
-	.menu-view-everything-1-container {
+	.menu-view-everything-6-container {
+		padding: 25px 0;
+	}
+
+	.menu-view-everything-1-container,
+	.menu-view-everything-6-container {
 		.sub-menu {
 			display: block;
 			margin-top: 1em;
@@ -33,9 +38,13 @@
 	}
 
 	li {
-		display: inline-block;
+		
 		list-style-type: none;
 		margin: 0 0 0 2.5em;
+
+		@media (min-width: $mobileNav) {
+			display: inline-block;
+		}
 
 		&:first-of-type {
 			margin-left: 0;
@@ -43,8 +52,12 @@
 
 		.sub-menu {
 			li {
-				display: inline-block;
+				
 				margin-bottom: 0;
+
+				@media (min-width: $mobileNav) {
+					display: inline-block;
+				}
 
 				&:first-of-type {
 					margin-left: 2.5em;

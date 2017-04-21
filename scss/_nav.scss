@@ -1,7 +1,7 @@
 .access {
 	@include clearfix;
 	position: relative;
-    top: 35px;
+    top: 25px;
     background: transparent;
 
 	@media (min-width: $s) {
@@ -344,6 +344,8 @@ nav.language {
 	}
 }
 
+
+
 .hamburger {
 	display: none;
 	@media (min-width: $xs) {
@@ -356,5 +358,14 @@ nav.language {
 
 }
 
+// edits from custom.css
+
+#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item {padding: 30px 30px 0 30px;}
+
+#mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu {
+	@media (min-width: $mobileNav) {
+    	box-shadow: 8px 12px 18px #ccc;
+    }
+}
 
 
