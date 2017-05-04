@@ -9,13 +9,9 @@ get_header(); ?>
 
 <section id="primary" role="main" class="col pull-left span_12">
 	<div class="hero">
-		<?php 
-			$image = get_field('hero_background_image');
-			if( !empty($image) ): ?>
-			
-			<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-		<?php endif; ?>
+		<?php while ( have_posts() ) : the_post(); ?>
+			<?php the_content(); ?>
+		<?php endwhile; // end of the loop. ?>
 
 		<?php if( have_rows('menu_item') ): ?>
 		<ul>
