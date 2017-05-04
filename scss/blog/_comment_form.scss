@@ -20,7 +20,7 @@
 	#{$all-text-inputs}, 
 	textarea {
 		position: relative;
-		float: left;
+		// float: left;
 		display: inline-block;
 	}
 	#{$all-text-inputs} {
@@ -36,8 +36,11 @@
 	  margin: 0 0;
 	}
 	input[type=submit] {
+		background: $dark;
+		color: #fff;
 		cursor: pointer;
 		margin: 10px 0;
+		padding: 10px;
 	}
 	.logged-in-as a {
 		color: $text;
